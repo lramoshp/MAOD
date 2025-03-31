@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, session
 import sqlite3
+import sqlitecloud
+
+gunicorn main:application
 
 app = Flask(__name__)
 app.secret_key = '1FN4kDmHz1XNGLq2LtQ7jIaNMwapvfihg0CRIBJg9a4'
